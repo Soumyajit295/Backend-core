@@ -7,6 +7,8 @@ dotenv.config({
     path : '.env'
 })
 
+console.log(process.env.ACCESS_TOKEN_EXPIRY)
+
 cloudinary.v2.config({
     cloud_name : process.env.CLOUDINARY_NAME,
     api_key : process.env.CLOUDINARY_API_KEY,
